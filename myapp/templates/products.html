@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 700px;
+            grid-template-rows: auto;
+            background-color:white;
+            row-gap: 50px;
+            column-gap: 10px;
+            justify-content: space-evenly;
+            align-content: space-around;
+            float: left;
+
+        }
+        .container div{
+            padding: 10px;
+            background-color:white;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+        input[type="button"]
+        {
+            width: 200px;
+            height: 40px;
+            background-color: orange;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <section class="container" >
+
+        <div class="item" >
+            
+                <h3>realme C35 blue</h3><br><br><br>
+                <img src="{% static 'images/glowingblack.jpg' %}" alt="">&nbsp;&nbsp;
+            
+            
+                <ul>
+                    <li>6 GB RAM | 128 GB ROM | Expandable Upto 256 GB</li>
+                    <li>   16.26 cm (6.4 inch) Full HD+ Display</li> 
+                    <li> 64MP + 8MP + 2MP + 2MP | 16MP Front Camera</li> 
+                    <li>   5000 mAh Battery</li> 
+                    <li>  MediaTek Helio G95 Processor</li>  
+                     <li> Super AMOLED Display</li>  
+                </ul>
+                <br><br><br>
+                <input type="button" value="ADD TO CART" >&nbsp;&nbsp;
+                <input type="button" value="BUY NOW">
+            
+            
+           
+        </div>
+        <div class="item">
+            <img src="{% static 'images/glowinggreen.jpg' %}" alt="">
+            <h3>realme C35 green</h3><br><br><br>
+            <ul>
+            <li>4 GB RAM | 64 GB ROM | Expandable Upto 1 TB</li>
+            <li>16.76 cm (6.6 inch) Full HD+ Display</li>
+            <li>50MP + 2MP + 0.3MP | 8MP Front Camera</li>
+            <li>5000 mAh Lithium Polymer Battery</li>
+            <li>Unisoc Tiger T616 Processor</li>
+            </ul>
+            <input type="button" value="ADD TO CART" >&nbsp;&nbsp;
+            <input type="button" value="BUY NOW">
+        </div>
+        <div class="item">
+            <img src="{% static 'images/realme8.jpg' %}" alt="">
+            <h3>realme 8</h3><br><br><br>
+            <ul>
+                <li>GB RAM | 128 GB ROM | Expandable Upto 256 GB</li>
+                <li>16.26 cm (6.4 inch) Full HD+ Display</li>
+                <li>64MP + 8MP + 2MP + 2MP | 16MP Front Camera</li>
+                <li>5000 mAh Battery</li>
+                <li>MediaTek Helio G95 Processor</li>
+                <li>Super AMOLED Display</li>
+            </ul> 
+            <input type="button" value="ADD TO CART" >&nbsp;&nbsp;
+            <input type="button" value="BUY NOW">
+        </div>
+        <div class="item">
+            <img src="{% static 'images/realme9i.jpg' %}" alt="">
+            <h3>realme 9i</h3><br><br><br>
+            <ul>
+                <li>4 GB RAM | 64 GB ROM | Expandable Upto 1 TB</li>
+                <li>cm (6.6 inch) Full HD+ Display</li>
+                <li>50MP + 2MP + 2MP | 16MP Front Camera</li>
+                <li> mAh Lithium ion Battery</li>
+                <li>ualcomm Snapdragon 680 (SM6225) Processor</li>
+            </ul>
+            <input type="button" value="ADD TO CART" >&nbsp;&nbsp;
+            <input type="button" value="BUY NOW">
+        </div>
+        <div class="item">
+            <img src="{% static 'images/realme82.jpg' %}" alt="">
+            <h3>realme 8</h3><br><br><br>
+            <ul>
+            <li>GB RAM | 128 GB ROM | Expandable Upto 256 GB</li> 
+             <li> 16.26 cm (6.4 inch) Full HD+ Display</li>  
+             <li>  64MP + 8MP + 2MP + 2MP | 16MP Front Camera</li> 
+              <li>5000 mAh Battery</li> 
+              <li>MediaTek Helio G95 Processor</li> 
+              <li>Super AMOLED Display</li> 
+              </ul>
+              <input type="button" value="ADD TO CART" >&nbsp;&nbsp;
+            <input type="button" value="BUY NOW">
+        </div>
+        <div class="item">
+            <img src="{% static 'images/realmec20.jpg' %}" alt="">
+            <h3>realme C20</h3><br><br><br>
+            <ul>
+            <li> GB RAM | 32 GB ROM | Expandable Upto 256 GB</li>
+            <li>16.51 cm (6.5 inch) HD+ Display</li>
+            <li>8MP Rear Camera | 5MP Front Camera</li>
+            <li>5000 mAh Battery</li>
+            <li>MediaTek Helio G35 Processor</li>
+            </ul>
+            <input type="button" value="ADD TO CART" >&nbsp;&nbsp;
+            <input type="button" value="BUY NOW">
+        </div>
+    </section>
+</body>
+</html>

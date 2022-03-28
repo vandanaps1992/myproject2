@@ -17,9 +17,32 @@
             background-color: antiquewhite;
             border: 2px;
         }
+        span .paragraph{
+            color: yellow;
+            visibility: hidden;
+
+        }
+        input[type="text"]
+        {
+            width: 200px;
+            border: 5px solid red;
+            color: red;
+        }
+        h1,h2,p,input
+        {
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
     </style>
 </head>
 <body>
+    <div>
+        <span>
+            <p class="paragraph">welcome to home</p>
+        </span>
+    </div>
+    <input type="text">
+    <input type="password">
     <h1>hello world</h1>
     <img src="{% static 'images/flower.jfif' %}" alt="">
     <h1 style="color: red; text-align: center;" >hello</h1>
