@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .validate
+        {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="/myapp/grid/"> 
+
+    
+    <label for="">Enter name:</label>
+    <input type="text" name="" id="txtname" placeholder="enter name"><br>
+    <b id="b1" class="validate"></b><br>
+    <label for="">Password:</label>
+    <input type="password" name="" id="txtpwd"><br>
+    <b id="b2" class="validate"></b><br>
+    
+    <label for="">Confirm Password:</label>
+    <input type="password" name="" id="txtcpwd"><br>
+    <b id="b3" class="validate"></b><br>
+    <label for="">Email:</label>
+    <input type="text" name="" id="txtemail">
+    <b id="b1" class="validate"></b><br>
+    <input type="submit" value="submit" onclick=" return validate()">
+ </form> 
+    <script>
+
+        function validate()
+        {
+            status = 1;
+            username = document.getElementById("txtname").value
+            password = document.getElementById("txtpwd").value
+            cpassword = document.getElementById("txtcpwd").value
+            console.log(username)
+            console.log(password)
+            if(username =='')
+            {
+                status = 0;
+                document.getElementById("b1").innerHTML = "Please enter your username"
+            }
+            else
+            {
+                
+                document.getElementById("b1").innerHTML = ''
+            }
+
+
+
+            if(password == '')
+            {
+                status = 0;
+                document.getElementById("b2").innerHTML = "please enter password"
+            }
+            else if(password.length < 6)
+            {
+                status = 0;
+                document.getElementById("b2").innerHTML = "password must be grater than 6"
+            }
+            else
+            {
+                
+                document.getElementById("b2").innerHTML = ''
+            }
+
+
+            if(password !=cpassword)
+            {
+                status = 0;
+                document.getElementById("b3").innerHTML = "password must be same"
+            }
+            else
+            {
+                
+                document.getElementById("b3").innerHTML = ''
+            }
+            console.log(status)
+            if(status == 0)
+            {
+               return false
+            }
+        }
+    </script>
+</body>
+</html>

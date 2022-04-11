@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        s = 0
+        n = parseInt(prompt("enter a number:"))
+        x = n
+        while(x>0)
+        {
+            r = x%10
+            s=s+(r*r*r)
+            x= parseInt(x/10 )
+        }
+        if(s==n)
+        {
+            console.log("amstrong")
+        }
+        else
+        {
+            console.log("not amstrong")
+        }
+    </script>
+</body>
+</html>

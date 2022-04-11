@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="hdng1">hello</h1>
+    <input type="button" value="click here" onclick="change()">
+    <script>
+        document.write("hello world")
+        var x = document.getElementsByTagName("h1")[0].innerHTML
+        console.log(x)
+
+        function change()
+        {
+            
+            document.getElementById('hdng1').innerHTML = "gud morning"
+        }
+    </script> -->
+
+    <input  id="txt1" type="text"><br>
+    <input id="txt2" type="text"><br>
+    <input id="txt3" type="text"><br>
+    <b id="b1"></b><br>
+    <input type="button" value="sum" onclick="addition()"><br>
+    <img id="img1" src="{% static 'images/bulboff.png' %}" width="30%" alt="">
+    <button onclick="onfun()">ON</button>
+    <button onclick="offun()">OFF</button>
+    <script>
+        function onfun()
+        {
+             document.getElementById("img1").setAttribute('src',"{% static 'images/bulbon.png' %}")
+
+        }
+        function offun()
+        {
+            document.getElementById("img1").setAttribute('src',"{% static 'images/bulboff.png' %}")
+        }
+        function addition()
+        {
+            a = parseInt(document.getElementById("txt1").value)
+            b = parseInt(document.getElementById("txt2").value)
+            c = parseInt(document.getElementById("txt3").value)
+            sum = a+b+c
+            document.getElementById("b1").style.color='green'
+            document.getElementById("b1").style.fontSize ='50px`'
+            document.getElementById("b1").innerHTML = sum
+            console.log(a)
+            console.log(b)
+            console.log(c)
+            console.log(sum)
+        }
+    </script>
+</body>
+</html>

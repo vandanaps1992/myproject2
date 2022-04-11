@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        .main{
+            margin: 30px 300px;
+            border: 1px solid ;
+            padding: 50px;
+        }
+        .bt1{
+            padding: 5px 25px;
+            font-size: 50px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 align="center">Calculator</h1>
+        
+            <div class="form-group">
+              <label for="frstno">Enter First Number:</label>
+              <input type="number" class="form-control" id="frstno" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="scndno">Enter Second Number:</label>
+              <input type="number" class="form-control" id="scndno">
+            </div>
+            <b id="b1" style="color: green; font-size: 50px;"></b><br>
+            <button type="button" class="btn btn-primary bt1" onclick="calculation('+')">+</button>
+            <button type="submit" class="btn btn-danger bt1" onclick="calculation('-')">-</button>
+            <button type="submit" class="btn btn-warning bt1" onclick="calculation('*')">*</button>
+            <button type="submit" class="btn btn-secondary bt1" onclick="calculation('/')">/</button>
+          
+    </div>
+    <script>
+        function calculation(sign)
+        {
+            frstno = parseInt(document.getElementById("frstno").value)
+            scndno = parseInt(document.getElementById("scndno").value)
+            result = document.getElementById("b1")
+            console.log(frstno, scndno, sign)
+            switch (sign) {
+                case '+':
+                        sum = frstno + scndno
+                        result.innerHTML = sum
+                    break;
+                    case '-':
+                        sum = frstno - scndno
+                        result.innerHTML = sum
+                    break;
+                    case '*':
+                        sum = frstno * scndno
+                        result.innerHTML = sum
+                    break;
+                    case '/':
+                        sum = frstno / scndno
+                        result.innerHTML = sum
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
