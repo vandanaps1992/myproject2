@@ -34,35 +34,46 @@
     </style>
 </head>
 <body>
-    <div class="main">
-        <div class="row teaxtbox">
-            <div class="col-md-12 padding-reset">
-              <!-- <b id="bnew" style="color: green; font-size: 50px;"></b> -->
-              <input type="text" id="result" name="" value=""> 
-            </div>
-          </div>
-            <br><br>
-            <button type="button" id="b1" class="btn btn-warning bt1" value="7" onclick="display('7')">7</button>
+  <section class="container">
+    <div class="item">
+      <div class="row teaxtbox">
+        <div class="col-md-12 padding-reset">
+          <!-- <b id="bnew" style="color: green; font-size: 50px;"></b> -->
+          <input type="text" id="result" name="" value=""> 
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="item">
+      <button type="button" id="b1" class="btn btn-warning bt1" value="7" onclick="display('7')">7</button>
             <button type="submit" id="b2" class="btn btn-warning bt1" onclick="display('8')">8</button>
             <button type="submit" class="btn btn-warning bt1" onclick="display('9')">9</button>
             <button type="submit" class="btn btn-warning bt1" onclick="display('+')">+</button>
-            <br><br>
-            <button type="button" class="btn btn-warning bt1" onclick="display('4')">4</button>
+  </div>
+  <br>
+  <div class="item">
+    <button type="button" class="btn btn-warning bt1" onclick="display('4')">4</button>
             <button type="submit" class="btn btn-warning bt1" onclick="display('5')">5</button>
             <button type="submit" class="btn btn-warning bt1" onclick="display('6')">6</button>
             <button type="submit" class="btn btn-warning bt1" onclick="display('-')"> -</button>
-            <br><br>
-            <button type="button" class="btn btn-warning bt1" onclick="display('1')">1</button>
+</div>
+<br>
+<div class="item">
+  <button type="button" class="btn btn-warning bt1" onclick="display('1')">1</button>
             <button type="submit" class="btn btn-warning bt1" onclick="display('2')">2</button>
             <button type="submit" class="btn btn-warning bt1" onclick="display('3')">3</button>
             <button type="submit" class="btn btn-warning bt1" onclick="display('*')">*</button>
-            <br><br>
-            <button type="button" class="btn btn-warning bt1" onclick="display('0')">0</button>
+</div>
+<br>
+<div class="item">
+  <button type="button" class="btn btn-warning bt1" onclick="display('0')">0</button>
             <button type="submit" class="btn btn-warning bt1" onclick="display('.')">.</button>
             <button type="submit" class="btn btn-warning bt1" onclick="display('/')">/</button>
             <button type="submit" class="btn btn-warning bt1" onclick="calc()">=</button>
             <button type="submit" class="btn btn-warning bt1" onclick="clearScreen()">AC</button>
-    </div>
+</div>
+</section>
+
 
     <script>
       function display(val)
